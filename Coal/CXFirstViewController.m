@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  
+  counter = 0;
   model = [[CXModel alloc] init];
   
   self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hunt-logo"]];
@@ -101,6 +101,15 @@
     webView.alpha = 1;
     [topView setGestureRecognizers:bottomView.gestureRecognizers];
   }];
+  
+  if (counter > 3) {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"It's a match!" message:@"Your contact information is being shared via email." delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    counter = 0;
+  }
+  else {
+    counter++;
+  }
 }
 
 -(void) slideViewToLeft:(CXPhotoView *)view {

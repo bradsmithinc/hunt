@@ -18,6 +18,8 @@
   BOOL _animating;
   
   UIWebView *webView;
+  
+  NSUInteger counter;
 }
 - (IBAction)noButtonPressed:(id)sender;
 - (IBAction)infoButtonPressed:(id)sender;
