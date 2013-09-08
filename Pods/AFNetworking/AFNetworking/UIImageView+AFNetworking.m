@@ -1,6 +1,6 @@
 // UIImageView+AFNetworking.m
 //
-// Copyright (c) 2013 AFNetworking (http://afnetworking.com)
+// Copyright (c) 2011 Gowalla (http://gowalla.com/)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,6 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
-#import "AFHTTPRequestOperation.h"
-#import "AFHTTPClient.h"
-
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 #import "UIImageView+AFNetworking.h"
 
@@ -37,11 +34,10 @@
 
 #pragma mark -
 
-static char kAFImageRequestOperationKey;
-static char kAFResponseSerializersKey;
+static char kAFImageRequestOperationObjectKey;
 
 @interface UIImageView (_AFNetworking)
-@property (readwrite, nonatomic, strong, setter = af_setImageRequestOperation:) AFHTTPRequestOperation *af_imageRequestOperation;
+@property (readwrite, nonatomic, strong, setter = af_setImageRequestOperation:) AFImageRequestOperation *af_imageRequestOperation;
 @end
 
 @implementation UIImageView (_AFNetworking)
@@ -51,17 +47,24 @@ static char kAFResponseSerializersKey;
 #pragma mark -
 
 @implementation UIImageView (AFNetworking)
-@dynamic imageResponseSerializer;
+
+- (AFHTTPRequestOperation *)af_imageRequestOperation {
+    return (AFHTTPRequestOperation *)objc_getAssociatedObject(self, &kAFImageRequestOperationObjectKey);
+}
+
+- (void)af_setImageRequestOperation:(AFImageRequestOperation *)imageRequestOperation {
+    objc_setAssociatedObject(self, &kAFImageRequestOperationObjectKey, imageRequestOperation, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 
 + (NSOperationQueue *)af_sharedImageRequestOperationQueue {
-    static NSOperationQueue *_af_sharedImageRequestOperationQueue = nil;
+    static NSOperationQueue *_af_imageRequestOperationQueue = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _af_sharedImageRequestOperationQueue = [[NSOperationQueue alloc] init];
-        _af_sharedImageRequestOperationQueue.maxConcurrentOperationCount = NSOperationQueueDefaultMaxConcurrentOperationCount;
+        _af_imageRequestOperationQueue = [[NSOperationQueue alloc] init];
+        [_af_imageRequestOperationQueue setMaxConcurrentOperationCount:NSOperationQueueDefaultMaxConcurrentOperationCount];
     });
 
-    return _af_sharedImageRequestOperationQueue;
+    return _af_imageRequestOperationQueue;
 }
 
 + (AFImageCache *)af_sharedImageCache {
@@ -72,28 +75,6 @@ static char kAFResponseSerializersKey;
     });
 
     return _af_imageCache;
-}
-
-- (AFHTTPRequestOperation *)af_imageRequestOperation {
-    return (AFHTTPRequestOperation *)objc_getAssociatedObject(self, &kAFImageRequestOperationKey);
-}
-
-- (void)af_setImageRequestOperation:(AFHTTPRequestOperation *)imageRequestOperation {
-    objc_setAssociatedObject(self, &kAFImageRequestOperationKey, imageRequestOperation, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (id <AFURLResponseSerialization>)imageResponseSerializer {
-    static id <AFURLResponseSerialization> _af_defaultImageResponseSerializer = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _af_defaultImageResponseSerializer = [AFImageSerializer serializer];
-    });
-
-    return objc_getAssociatedObject(self, &kAFResponseSerializersKey) ?: _af_defaultImageResponseSerializer;
-}
-
-- (void)setResponseSerializers:(NSArray *)serializers {
-    objc_setAssociatedObject(self, &kAFResponseSerializersKey, serializers, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 #pragma mark -
@@ -128,29 +109,39 @@ static char kAFResponseSerializersKey;
 
         self.af_imageRequestOperation = nil;
     } else {
-        self.image = placeholderImage;
+        if (placeholderImage) {
+            self.image = placeholderImage;
+        }
 
-        __weak __typeof(self)weakSelf = self;
-        self.af_imageRequestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:urlRequest];
-        self.af_imageRequestOperation.responseSerializer = self.imageResponseSerializer;
-        [self.af_imageRequestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-            __strong __typeof(weakSelf)strongSelf = weakSelf;
-            if ([[urlRequest URL] isEqual:[operation.request URL]]) {
+        AFImageRequestOperation *requestOperation = [[AFImageRequestOperation alloc] initWithRequest:urlRequest];
+        [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+            if ([urlRequest isEqual:[self.af_imageRequestOperation request]]) {
                 if (success) {
-                    success(urlRequest, operation.response, responseObject);
+                    success(operation.request, operation.response, responseObject);
                 } else if (responseObject) {
-                    strongSelf.image = responseObject;
+                    self.image = responseObject;
+                }
+
+                if (self.af_imageRequestOperation == operation) {
+                    self.af_imageRequestOperation = nil;
                 }
             }
 
-            [[[strongSelf class] af_sharedImageCache] cacheImage:responseObject forRequest:urlRequest];
+            [[[self class] af_sharedImageCache] cacheImage:responseObject forRequest:urlRequest];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            if ([[urlRequest URL] isEqual:[operation.response URL]]) {
+            if ([urlRequest isEqual:[self.af_imageRequestOperation request]]) {
                 if (failure) {
-                    failure(urlRequest, operation.response, error);
+                    failure(operation.request, operation.response, error);
+                }
+
+                if (self.af_imageRequestOperation == operation) {
+                    self.af_imageRequestOperation = nil;
                 }
             }
         }];
+
+        self.af_imageRequestOperation = requestOperation;
+
         [[[self class] af_sharedImageRequestOperationQueue] addOperation:self.af_imageRequestOperation];
     }
 }
