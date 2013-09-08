@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CXModel : NSObject
+@interface CXModel : NSObject {
+  NSArray *data;
+  NSUInteger index;
+}
 
 -(NSDictionary *) next;
 

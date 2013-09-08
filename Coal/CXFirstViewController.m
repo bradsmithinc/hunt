@@ -45,9 +45,11 @@
   [self.view addSubview:bottomView];
   
   
+  data = [model next];
+  
   topView = [[CXPhotoView alloc] initWithFrame:CGRectMake(0, 83, 320, 255)];
   [self.view addSubview:topView];
-  [topView setData:[model next]];
+  [topView setData:data];
   webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 255+83, 320, 122)];
   webView.scrollView.scrollEnabled = NO;
   webView.opaque = NO;
@@ -82,6 +84,7 @@
   } completion:^(BOOL finished) {
     view.transform = CGAffineTransformIdentity;
     [self.view insertSubview:view belowSubview:bottomView];
+    [view setData:[model next]];
     view.center = bottomView.center;
     topView = bottomView;
     bottomView = view;
@@ -100,6 +103,7 @@
   } completion:^(BOOL finished) {
     view.transform = CGAffineTransformIdentity;
     [self.view insertSubview:view belowSubview:bottomView];
+        [view setData:[model next]];
     view.center = bottomView.center;
     topView = bottomView;
     bottomView = view;
