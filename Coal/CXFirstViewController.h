@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CXPhotoView.h"
+#import "CXModel.h"
 
-@interface CXFirstViewController : UIViewController
+@interface CXFirstViewController : UIViewController {
+  CGPoint _startingPoint;
+  CXPhotoView *bottomView;
+  CXPhotoView *topView;
+  CXModel *model;
+  BOOL _animating;
+  
+  UIWebView *webView;
+}
+- (IBAction)noButtonPressed:(id)sender;
+- (IBAction)infoButtonPressed:(id)sender;
+- (IBAction)yesButtonPressed:(id)sender;
 
 @end

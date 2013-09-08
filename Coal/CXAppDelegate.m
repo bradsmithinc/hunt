@@ -11,25 +11,41 @@
 #import "CXFirstViewController.h"
 
 #import "CXSecondViewController.h"
+#import <ECSlidingViewController/ECSlidingViewController.h>
 
 @implementation CXAppDelegate
 
 - (void)dealloc
 {
   [_window release];
-  [_tabBarController release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  
+
+
+  
+  [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
+  
+  
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
   UIViewController *viewController1 = [[[CXFirstViewController alloc] initWithNibName:@"CXFirstViewController" bundle:nil] autorelease];
   UIViewController *viewController2 = [[[CXSecondViewController alloc] initWithNibName:@"CXSecondViewController" bundle:nil] autorelease];
-  self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-  self.tabBarController.viewControllers = @[viewController1, viewController2];
-  self.window.rootViewController = self.tabBarController;
+  UIViewController *viewController3 = [[[CXSecondViewController alloc] initWithNibName:@"CXSecondViewController" bundle:nil] autorelease];
+  
+  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+ 
+  
+  ECSlidingViewController *slider = [[ECSlidingViewController alloc] init];
+  slider.topViewController = navigationController;
+  
+  slider.underLeftViewController = viewController2;
+  slider.underRightViewController = viewController3;
+  
+  self.window.rootViewController = slider;
     [self.window makeKeyAndVisible];
     return YES;
 }

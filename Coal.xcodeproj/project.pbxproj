@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C85035ED21894AF39C3E663A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D2FD65A4854AD9B3A65D1C /* libPods.a */; };
+		E31556FF17DC0F2B0030339E /* 01_company-a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E31556F117DC0F2B0030339E /* 01_company-a.jpg */; };
+		E315570017DC0F2B0030339E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556F217DC0F2B0030339E /* button.png */; };
+		E315570117DC0F2B0030339E /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556F317DC0F2B0030339E /* button@2x.png */; };
+		E315570217DC0F2B0030339E /* check-no.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556F417DC0F2B0030339E /* check-no.png */; };
+		E315570317DC0F2B0030339E /* check-no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556F517DC0F2B0030339E /* check-no@2x.png */; };
+		E315570417DC0F2B0030339E /* check-yes.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556F617DC0F2B0030339E /* check-yes.png */; };
+		E315570517DC0F2B0030339E /* check-yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556F717DC0F2B0030339E /* check-yes@2x.png */; };
+		E315570617DC0F2B0030339E /* crunchbase.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556F817DC0F2B0030339E /* crunchbase.png */; };
+		E315570717DC0F2B0030339E /* crunchbase@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556F917DC0F2B0030339E /* crunchbase@2x.png */; };
+		E315570817DC0F2B0030339E /* hunt-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556FA17DC0F2B0030339E /* hunt-logo.png */; };
+		E315570917DC0F2B0030339E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556FB17DC0F2B0030339E /* info.png */; };
+		E315570A17DC0F2B0030339E /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556FC17DC0F2B0030339E /* info@2x.png */; };
+		E315570B17DC0F2B0030339E /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556FD17DC0F2B0030339E /* menu.png */; };
+		E315570C17DC0F2B0030339E /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556FE17DC0F2B0030339E /* menu@2x.png */; };
+		E315570F17DC20320030339E /* CXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E315570E17DC20320030339E /* CXModel.m */; };
+		E37C369B16C83FE700793B41 /* CXPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C369A16C83FE700793B41 /* CXPhotoView.m */; };
+		E37C369D16C84C4100793B41 /* MBShortStack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C369C16C84C4100793B41 /* MBShortStack@2x.png */; };
+		E37C369F16C84CCA00793B41 /* MBButtonHolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C369E16C84CCA00793B41 /* MBButtonHolder@2x.png */; };
+		E37C36A216C84D6B00793B41 /* MBDislikeButtonDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36A016C84D6B00793B41 /* MBDislikeButtonDefault@2x.png */; };
+		E37C36A316C84D6B00793B41 /* MBDislikeButtonDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36A116C84D6B00793B41 /* MBDislikeButtonDisabled@2x.png */; };
+		E37C36A516C84D9D00793B41 /* MBDislikeButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36A416C84D9D00793B41 /* MBDislikeButtonHighlighted@2x.png */; };
+		E37C36A916C84E5600793B41 /* MBLikeButtonDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36A616C84E5600793B41 /* MBLikeButtonDefault@2x.png */; };
+		E37C36AA16C84E5600793B41 /* MBLikeButtonDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36A716C84E5600793B41 /* MBLikeButtonDisabled@2x.png */; };
+		E37C36AB16C84E5600793B41 /* MBLikeButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36A816C84E5600793B41 /* MBLikeButtonHighlighted@2x.png */; };
+		E37C36AF16C84FB000793B41 /* MBInfoButtonDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36AC16C84FB000793B41 /* MBInfoButtonDefault@2x.png */; };
+		E37C36B016C84FB000793B41 /* MBInfoButtonDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36AD16C84FB000793B41 /* MBInfoButtonDisabled@2x.png */; };
+		E37C36B116C84FB000793B41 /* MBInfoButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C36AE16C84FB000793B41 /* MBInfoButtonHighlighted@2x.png */; };
 		E3A23B5F16C5BA9300967F73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A23B5E16C5BA9300967F73 /* UIKit.framework */; };
 		E3A23B6116C5BA9300967F73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A23B6016C5BA9300967F73 /* Foundation.framework */; };
 		E3A23B6316C5BA9300967F73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A23B6216C5BA9300967F73 /* CoreGraphics.framework */; };
@@ -17,16 +45,46 @@
 		E3A23B7316C5BA9300967F73 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A23B7216C5BA9300967F73 /* Default@2x.png */; };
 		E3A23B7516C5BA9300967F73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A23B7416C5BA9300967F73 /* Default-568h@2x.png */; };
 		E3A23B7816C5BA9300967F73 /* CXFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A23B7716C5BA9300967F73 /* CXFirstViewController.m */; };
-		E3A23B7A16C5BA9300967F73 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A23B7916C5BA9300967F73 /* first.png */; };
-		E3A23B7C16C5BA9300967F73 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A23B7B16C5BA9300967F73 /* first@2x.png */; };
 		E3A23B7F16C5BA9400967F73 /* CXSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A23B7E16C5BA9400967F73 /* CXSecondViewController.m */; };
 		E3A23B8116C5BA9400967F73 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A23B8016C5BA9400967F73 /* second.png */; };
 		E3A23B8316C5BA9400967F73 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A23B8216C5BA9400967F73 /* second@2x.png */; };
 		E3A23B8616C5BA9400967F73 /* CXFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A23B8416C5BA9400967F73 /* CXFirstViewController.xib */; };
 		E3A23B8916C5BA9400967F73 /* CXSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A23B8716C5BA9400967F73 /* CXSecondViewController.xib */; };
+		E3A9A8F316C9B53100F49439 /* NavBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A9A8F216C9B53100F49439 /* NavBar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44D2FD65A4854AD9B3A65D1C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FF281EAC594A03A8829556 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E31556F117DC0F2B0030339E /* 01_company-a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "01_company-a.jpg"; sourceTree = "<group>"; };
+		E31556F217DC0F2B0030339E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		E31556F317DC0F2B0030339E /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
+		E31556F417DC0F2B0030339E /* check-no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-no.png"; sourceTree = "<group>"; };
+		E31556F517DC0F2B0030339E /* check-no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-no@2x.png"; sourceTree = "<group>"; };
+		E31556F617DC0F2B0030339E /* check-yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-yes.png"; sourceTree = "<group>"; };
+		E31556F717DC0F2B0030339E /* check-yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-yes@2x.png"; sourceTree = "<group>"; };
+		E31556F817DC0F2B0030339E /* crunchbase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crunchbase.png; sourceTree = "<group>"; };
+		E31556F917DC0F2B0030339E /* crunchbase@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crunchbase@2x.png"; sourceTree = "<group>"; };
+		E31556FA17DC0F2B0030339E /* hunt-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hunt-logo.png"; sourceTree = "<group>"; };
+		E31556FB17DC0F2B0030339E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		E31556FC17DC0F2B0030339E /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		E31556FD17DC0F2B0030339E /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		E31556FE17DC0F2B0030339E /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		E315570D17DC20320030339E /* CXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXModel.h; sourceTree = "<group>"; };
+		E315570E17DC20320030339E /* CXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXModel.m; sourceTree = "<group>"; };
+		E37C369916C83FE700793B41 /* CXPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXPhotoView.h; sourceTree = "<group>"; };
+		E37C369A16C83FE700793B41 /* CXPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXPhotoView.m; sourceTree = "<group>"; };
+		E37C369C16C84C4100793B41 /* MBShortStack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBShortStack@2x.png"; sourceTree = "<group>"; };
+		E37C369E16C84CCA00793B41 /* MBButtonHolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBButtonHolder@2x.png"; sourceTree = "<group>"; };
+		E37C36A016C84D6B00793B41 /* MBDislikeButtonDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBDislikeButtonDefault@2x.png"; sourceTree = "<group>"; };
+		E37C36A116C84D6B00793B41 /* MBDislikeButtonDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBDislikeButtonDisabled@2x.png"; sourceTree = "<group>"; };
+		E37C36A416C84D9D00793B41 /* MBDislikeButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBDislikeButtonHighlighted@2x.png"; sourceTree = "<group>"; };
+		E37C36A616C84E5600793B41 /* MBLikeButtonDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBLikeButtonDefault@2x.png"; sourceTree = "<group>"; };
+		E37C36A716C84E5600793B41 /* MBLikeButtonDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBLikeButtonDisabled@2x.png"; sourceTree = "<group>"; };
+		E37C36A816C84E5600793B41 /* MBLikeButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBLikeButtonHighlighted@2x.png"; sourceTree = "<group>"; };
+		E37C36AC16C84FB000793B41 /* MBInfoButtonDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBInfoButtonDefault@2x.png"; sourceTree = "<group>"; };
+		E37C36AD16C84FB000793B41 /* MBInfoButtonDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBInfoButtonDisabled@2x.png"; sourceTree = "<group>"; };
+		E37C36AE16C84FB000793B41 /* MBInfoButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBInfoButtonHighlighted@2x.png"; sourceTree = "<group>"; };
 		E3A23B5B16C5BA9300967F73 /* Coal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A23B5E16C5BA9300967F73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E3A23B6016C5BA9300967F73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,14 +100,13 @@
 		E3A23B7416C5BA9300967F73 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E3A23B7616C5BA9300967F73 /* CXFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXFirstViewController.h; sourceTree = "<group>"; };
 		E3A23B7716C5BA9300967F73 /* CXFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXFirstViewController.m; sourceTree = "<group>"; };
-		E3A23B7916C5BA9300967F73 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		E3A23B7B16C5BA9300967F73 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		E3A23B7D16C5BA9300967F73 /* CXSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXSecondViewController.h; sourceTree = "<group>"; };
 		E3A23B7E16C5BA9400967F73 /* CXSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXSecondViewController.m; sourceTree = "<group>"; };
 		E3A23B8016C5BA9400967F73 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		E3A23B8216C5BA9400967F73 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		E3A23B8516C5BA9400967F73 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CXFirstViewController.xib; sourceTree = "<group>"; };
 		E3A23B8816C5BA9400967F73 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CXSecondViewController.xib; sourceTree = "<group>"; };
+		E3A9A8F216C9B53100F49439 /* NavBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +117,7 @@
 				E3A23B5F16C5BA9300967F73 /* UIKit.framework in Frameworks */,
 				E3A23B6116C5BA9300967F73 /* Foundation.framework in Frameworks */,
 				E3A23B6316C5BA9300967F73 /* CoreGraphics.framework in Frameworks */,
+				C85035ED21894AF39C3E663A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +130,7 @@
 				E3A23B6416C5BA9300967F73 /* Coal */,
 				E3A23B5D16C5BA9300967F73 /* Frameworks */,
 				E3A23B5C16C5BA9300967F73 /* Products */,
+				80FF281EAC594A03A8829556 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +148,7 @@
 				E3A23B5E16C5BA9300967F73 /* UIKit.framework */,
 				E3A23B6016C5BA9300967F73 /* Foundation.framework */,
 				E3A23B6216C5BA9300967F73 /* CoreGraphics.framework */,
+				44D2FD65A4854AD9B3A65D1C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,8 +160,6 @@
 				E3A23B6E16C5BA9300967F73 /* CXAppDelegate.m */,
 				E3A23B7616C5BA9300967F73 /* CXFirstViewController.h */,
 				E3A23B7716C5BA9300967F73 /* CXFirstViewController.m */,
-				E3A23B7916C5BA9300967F73 /* first.png */,
-				E3A23B7B16C5BA9300967F73 /* first@2x.png */,
 				E3A23B7D16C5BA9300967F73 /* CXSecondViewController.h */,
 				E3A23B7E16C5BA9400967F73 /* CXSecondViewController.m */,
 				E3A23B8016C5BA9400967F73 /* second.png */,
@@ -109,6 +167,10 @@
 				E3A23B8416C5BA9400967F73 /* CXFirstViewController.xib */,
 				E3A23B8716C5BA9400967F73 /* CXSecondViewController.xib */,
 				E3A23B6516C5BA9300967F73 /* Supporting Files */,
+				E37C369916C83FE700793B41 /* CXPhotoView.h */,
+				E37C369A16C83FE700793B41 /* CXPhotoView.m */,
+				E315570D17DC20320030339E /* CXModel.h */,
+				E315570E17DC20320030339E /* CXModel.m */,
 			);
 			path = Coal;
 			sourceTree = "<group>";
@@ -116,6 +178,32 @@
 		E3A23B6516C5BA9300967F73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E31556F117DC0F2B0030339E /* 01_company-a.jpg */,
+				E31556F217DC0F2B0030339E /* button.png */,
+				E31556F317DC0F2B0030339E /* button@2x.png */,
+				E31556F417DC0F2B0030339E /* check-no.png */,
+				E31556F517DC0F2B0030339E /* check-no@2x.png */,
+				E31556F617DC0F2B0030339E /* check-yes.png */,
+				E31556F717DC0F2B0030339E /* check-yes@2x.png */,
+				E31556F817DC0F2B0030339E /* crunchbase.png */,
+				E31556F917DC0F2B0030339E /* crunchbase@2x.png */,
+				E31556FA17DC0F2B0030339E /* hunt-logo.png */,
+				E31556FB17DC0F2B0030339E /* info.png */,
+				E31556FC17DC0F2B0030339E /* info@2x.png */,
+				E31556FD17DC0F2B0030339E /* menu.png */,
+				E31556FE17DC0F2B0030339E /* menu@2x.png */,
+				E3A9A8F216C9B53100F49439 /* NavBar@2x.png */,
+				E37C36AC16C84FB000793B41 /* MBInfoButtonDefault@2x.png */,
+				E37C36AD16C84FB000793B41 /* MBInfoButtonDisabled@2x.png */,
+				E37C36AE16C84FB000793B41 /* MBInfoButtonHighlighted@2x.png */,
+				E37C36A616C84E5600793B41 /* MBLikeButtonDefault@2x.png */,
+				E37C36A716C84E5600793B41 /* MBLikeButtonDisabled@2x.png */,
+				E37C36A816C84E5600793B41 /* MBLikeButtonHighlighted@2x.png */,
+				E37C36A416C84D9D00793B41 /* MBDislikeButtonHighlighted@2x.png */,
+				E37C36A016C84D6B00793B41 /* MBDislikeButtonDefault@2x.png */,
+				E37C36A116C84D6B00793B41 /* MBDislikeButtonDisabled@2x.png */,
+				E37C369E16C84CCA00793B41 /* MBButtonHolder@2x.png */,
+				E37C369C16C84C4100793B41 /* MBShortStack@2x.png */,
 				E3A23B6616C5BA9300967F73 /* Coal-Info.plist */,
 				E3A23B6716C5BA9300967F73 /* InfoPlist.strings */,
 				E3A23B6A16C5BA9300967F73 /* main.m */,
@@ -134,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3A23B8C16C5BA9400967F73 /* Build configuration list for PBXNativeTarget "Coal" */;
 			buildPhases = (
+				6F2E9D3D59A84F47A8DEB3E1 /* Check Pods Manifest.lock */,
 				E3A23B5716C5BA9300967F73 /* Sources */,
 				E3A23B5816C5BA9300967F73 /* Frameworks */,
 				E3A23B5916C5BA9300967F73 /* Resources */,
+				4086D611835E47F5B336AE53 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,20 +269,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E315570317DC0F2B0030339E /* check-no@2x.png in Resources */,
+				E315570C17DC0F2B0030339E /* menu@2x.png in Resources */,
 				E3A23B6916C5BA9300967F73 /* InfoPlist.strings in Resources */,
 				E3A23B7116C5BA9300967F73 /* Default.png in Resources */,
+				E315570817DC0F2B0030339E /* hunt-logo.png in Resources */,
 				E3A23B7316C5BA9300967F73 /* Default@2x.png in Resources */,
 				E3A23B7516C5BA9300967F73 /* Default-568h@2x.png in Resources */,
-				E3A23B7A16C5BA9300967F73 /* first.png in Resources */,
-				E3A23B7C16C5BA9300967F73 /* first@2x.png in Resources */,
 				E3A23B8116C5BA9400967F73 /* second.png in Resources */,
+				E315570717DC0F2B0030339E /* crunchbase@2x.png in Resources */,
+				E315570B17DC0F2B0030339E /* menu.png in Resources */,
 				E3A23B8316C5BA9400967F73 /* second@2x.png in Resources */,
 				E3A23B8616C5BA9400967F73 /* CXFirstViewController.xib in Resources */,
+				E315570117DC0F2B0030339E /* button@2x.png in Resources */,
 				E3A23B8916C5BA9400967F73 /* CXSecondViewController.xib in Resources */,
+				E37C369D16C84C4100793B41 /* MBShortStack@2x.png in Resources */,
+				E315570617DC0F2B0030339E /* crunchbase.png in Resources */,
+				E37C369F16C84CCA00793B41 /* MBButtonHolder@2x.png in Resources */,
+				E315570917DC0F2B0030339E /* info.png in Resources */,
+				E315570417DC0F2B0030339E /* check-yes.png in Resources */,
+				E37C36A216C84D6B00793B41 /* MBDislikeButtonDefault@2x.png in Resources */,
+				E315570017DC0F2B0030339E /* button.png in Resources */,
+				E37C36A316C84D6B00793B41 /* MBDislikeButtonDisabled@2x.png in Resources */,
+				E315570A17DC0F2B0030339E /* info@2x.png in Resources */,
+				E37C36A516C84D9D00793B41 /* MBDislikeButtonHighlighted@2x.png in Resources */,
+				E37C36A916C84E5600793B41 /* MBLikeButtonDefault@2x.png in Resources */,
+				E37C36AA16C84E5600793B41 /* MBLikeButtonDisabled@2x.png in Resources */,
+				E37C36AB16C84E5600793B41 /* MBLikeButtonHighlighted@2x.png in Resources */,
+				E37C36AF16C84FB000793B41 /* MBInfoButtonDefault@2x.png in Resources */,
+				E37C36B016C84FB000793B41 /* MBInfoButtonDisabled@2x.png in Resources */,
+				E37C36B116C84FB000793B41 /* MBInfoButtonHighlighted@2x.png in Resources */,
+				E315570517DC0F2B0030339E /* check-yes@2x.png in Resources */,
+				E31556FF17DC0F2B0030339E /* 01_company-a.jpg in Resources */,
+				E3A9A8F316C9B53100F49439 /* NavBar@2x.png in Resources */,
+				E315570217DC0F2B0030339E /* check-no.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4086D611835E47F5B336AE53 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		6F2E9D3D59A84F47A8DEB3E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3A23B5716C5BA9300967F73 /* Sources */ = {
@@ -201,8 +346,10 @@
 			files = (
 				E3A23B6B16C5BA9300967F73 /* main.m in Sources */,
 				E3A23B6F16C5BA9300967F73 /* CXAppDelegate.m in Sources */,
+				E315570F17DC20320030339E /* CXModel.m in Sources */,
 				E3A23B7816C5BA9300967F73 /* CXFirstViewController.m in Sources */,
 				E3A23B7F16C5BA9400967F73 /* CXSecondViewController.m in Sources */,
+				E37C369B16C83FE700793B41 /* CXPhotoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +439,7 @@
 		};
 		E3A23B8D16C5BA9400967F73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FF281EAC594A03A8829556 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coal/Coal-Prefix.pch";
@@ -303,6 +451,7 @@
 		};
 		E3A23B8E16C5BA9400967F73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FF281EAC594A03A8829556 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coal/Coal-Prefix.pch";
@@ -331,6 +480,7 @@
 				E3A23B8E16C5BA9400967F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
