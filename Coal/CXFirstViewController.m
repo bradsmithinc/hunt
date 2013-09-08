@@ -7,6 +7,7 @@
 //
 
 #import "CXFirstViewController.h"
+#import "CXPersonView.h"
 #import <ECSlidingViewController/ECSlidingViewController.h>
 @interface CXFirstViewController ()
 
@@ -39,6 +40,8 @@
   
   
   NSDictionary *data = [model next];
+  
+  
 	bottomView = [[CXPhotoView alloc] initWithFrame:CGRectMake(0, 83, 320, 255)];
   bottomView.backgroundColor = [UIColor blueColor];
   [bottomView setData:data];
@@ -47,7 +50,13 @@
   
   data = [model next];
   
-  topView = [[CXPhotoView alloc] initWithFrame:CGRectMake(0, 83, 320, 255)];
+  
+  NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"PersonView"
+                                                        owner:nil
+                                                      options:nil];
+  
+  
+  topView = [arrayOfViews firstObject]; //[[CXPersonView alloc] initWithFrame:CGRectMake(0, 83, 320, 255)];
   [self.view addSubview:topView];
   [topView setData:data];
   webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 255+83, 320, 122)];

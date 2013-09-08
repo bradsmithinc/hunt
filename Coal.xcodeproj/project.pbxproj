@@ -23,6 +23,8 @@
 		E315570B17DC0F2B0030339E /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556FD17DC0F2B0030339E /* menu.png */; };
 		E315570C17DC0F2B0030339E /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31556FE17DC0F2B0030339E /* menu@2x.png */; };
 		E315570F17DC20320030339E /* CXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E315570E17DC20320030339E /* CXModel.m */; };
+		E315571217DC3F600030339E /* CXPersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E315571117DC3F600030339E /* CXPersonView.m */; };
+		E315571417DC54CA0030339E /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E315571317DC512B0030339E /* PersonView.xib */; };
 		E37C369B16C83FE700793B41 /* CXPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C369A16C83FE700793B41 /* CXPhotoView.m */; };
 		E37C369D16C84C4100793B41 /* MBShortStack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C369C16C84C4100793B41 /* MBShortStack@2x.png */; };
 		E37C369F16C84CCA00793B41 /* MBButtonHolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E37C369E16C84CCA00793B41 /* MBButtonHolder@2x.png */; };
@@ -72,6 +74,9 @@
 		E31556FE17DC0F2B0030339E /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		E315570D17DC20320030339E /* CXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXModel.h; sourceTree = "<group>"; };
 		E315570E17DC20320030339E /* CXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXModel.m; sourceTree = "<group>"; };
+		E315571017DC3F600030339E /* CXPersonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXPersonView.h; sourceTree = "<group>"; };
+		E315571117DC3F600030339E /* CXPersonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXPersonView.m; sourceTree = "<group>"; };
+		E315571317DC512B0030339E /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		E37C369916C83FE700793B41 /* CXPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXPhotoView.h; sourceTree = "<group>"; };
 		E37C369A16C83FE700793B41 /* CXPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXPhotoView.m; sourceTree = "<group>"; };
 		E37C369C16C84C4100793B41 /* MBShortStack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBShortStack@2x.png"; sourceTree = "<group>"; };
@@ -171,6 +176,9 @@
 				E37C369A16C83FE700793B41 /* CXPhotoView.m */,
 				E315570D17DC20320030339E /* CXModel.h */,
 				E315570E17DC20320030339E /* CXModel.m */,
+				E315571017DC3F600030339E /* CXPersonView.h */,
+				E315571117DC3F600030339E /* CXPersonView.m */,
+				E315571317DC512B0030339E /* PersonView.xib */,
 			);
 			path = Coal;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 				E31556FF17DC0F2B0030339E /* 01_company-a.jpg in Resources */,
 				E3A9A8F316C9B53100F49439 /* NavBar@2x.png in Resources */,
 				E315570217DC0F2B0030339E /* check-no.png in Resources */,
+				E315571417DC54CA0030339E /* PersonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3A23B6B16C5BA9300967F73 /* main.m in Sources */,
+				E315571217DC3F600030339E /* CXPersonView.m in Sources */,
 				E3A23B6F16C5BA9300967F73 /* CXAppDelegate.m in Sources */,
 				E315570F17DC20320030339E /* CXModel.m in Sources */,
 				E3A23B7816C5BA9300967F73 /* CXFirstViewController.m in Sources */,

@@ -15,10 +15,36 @@
     index = 0;
     data = @[
              @{@"image_url": @"http://www.zimo.co/images/upload/41/airbnb_2_copy.jpeg",
-               @"html": @"This is a test"},
+               @"html": @"This is a test",
+               @"name": @"Jen Wilhelm",
+               @"tag_list": @"developer, designer, front-end, ux, ui, design, startup, photoshop, branding",
+               @"pos1_name": @"8byte8",
+               @"pos1_title": @"Designer and front-end developer",
+               @"pos1_image": @"http://crunchbase.com/assets/images/resized/0016/2903/162903v4-max-150x150.png",
+               @"pos2_name": @"8byte8",
+               @"pos2_title": @"Designer and front-end developer",
+               @"pos2_image": @"http://crunchbase.com/assets/images/resized/0016/2903/162903v4-max-150x150.png",
+               @"pos3_name": @"8byte8",
+               @"pos3_title": @"Designer and front-end developer",
+               @"pos3_image": @"http://crunchbase.com/assets/images/resized/0016/2903/162903v4-max-150x150.png"
+
+               
+               },
              
              @{@"image_url": @"http://www.na-komorke.net/komurka/maltanczyk-maltese-kokardka-niebieska.jpeg",
-               @"html": @"This is a test"},
+               @"html": @"This is a test",
+               @"name": @"Jen Wilhelm",
+               @"tag_list": @"developer, designer, front-end, ux, ui, design, startup, photoshop, branding",
+               @"pos1_name": @"8byte8",
+               @"pos1_title": @"Designer and front-end developer",
+               @"pos1_image": @"http://crunchbase.com/assets/images/resized/0016/2903/162903v4-max-150x150.png",
+               @"pos2_name": @"8byte8",
+               @"pos2_title": @"Designer and front-end developer",
+               @"pos2_image": @"http://crunchbase.com/assets/images/resized/0016/2903/162903v4-max-150x150.png",
+               @"pos3_name": @"8byte8",
+               @"pos3_title": @"Designer and front-end developer",
+               @"pos3_image": @"http://crunchbase.com/assets/images/resized/0016/2903/162903v4-max-150x150.png"
+               },
              
              @{@"image_url": @"http://s3.amazonaws.com/rapgenius/filepicker%2FvCleswcKTpuRXKptjOPo_kitten.jpg",
                @"html": @"This is a test"},
