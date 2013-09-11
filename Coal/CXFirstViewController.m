@@ -41,9 +41,15 @@
   
   NSDictionary *data = [model next];
   
+  NSArray *arrayOfViews2 = [[NSBundle mainBundle] loadNibNamed:@"PersonView"
+                                                        owner:nil
+                                                      options:nil];
   
-	bottomView = [[CXPhotoView alloc] initWithFrame:CGRectMake(0, 83, 320, 255)];
-  bottomView.backgroundColor = [UIColor blueColor];
+  
+  bottomView = [arrayOfViews2 firstObject];
+  
+	//bottomView = [[CXPhotoView alloc] initWithFrame:CGRectMake(0, 83, 320, 255)];
+  //bottomView.backgroundColor = [UIColor blueColor];
   [bottomView setData:data];
   [self.view addSubview:bottomView];
   
@@ -102,7 +108,7 @@
     [topView setGestureRecognizers:bottomView.gestureRecognizers];
   }];
   
-  if (counter > 3) {
+  if (counter > 1) {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"It's a match!" message:@"Your contact information is being shared via email." delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
     counter = 0;
